@@ -2,6 +2,7 @@ const Datas = [
   {
     id: 1,
     username: "Nirina",
+    name: "nnnnn",
     email: "a@gmail.com",
     password: "azerty",
     repassword: "azerty",

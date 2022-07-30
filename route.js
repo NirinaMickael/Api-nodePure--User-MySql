@@ -1,13 +1,12 @@
 const {Controller} = require('./Controller');
 const {headers} = require('./config')
 const route = (req, res, url, method) => {
-  
   if (url == "login" && method == "POST") {
     Controller.LoginUser(req,res);
   } else if (url == "register" && method == "POST") {
     Controller.SignUser(req,res);
-  } else if (url == "alluser" && method == "GET") {
-    Controller.AllUser(req,res);
+  } else if (url == "alluser" && method == "POST") {
+    Controller.AccessDashboard(req,res);
   }else if (url == "dashboard" && method == "GET") {
     Controller.AccessDashboard(req,res);
   }else {
